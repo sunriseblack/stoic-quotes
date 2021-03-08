@@ -28,7 +28,7 @@ class StoicQuote extends React.Component {
           <div id='quote-box'>
             <div id='text'><span id='quote-mark'>"</span>{this.state.text}</div>
             <div id='author'>– {this.state.author}</div>
-            <a id='tweet-quote'></a><button id='new-quote' onClick={this.submitQuote}>New Quote</button>
+            <button id='new-quote' onClick={this.submitQuote}>New Quote</button>
           </div>
         </div>
 
