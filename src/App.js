@@ -31,7 +31,6 @@ class StoicQuote extends React.Component {
             <button id='new-quote' onClick={this.submitQuote}>New Quote</button>
           </div>
         </div>
-
     )
   }
 }

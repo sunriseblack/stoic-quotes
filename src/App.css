@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 .wrapper {
   background-color: #f8f4f0;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: grid;
   place-items: center;
 }
