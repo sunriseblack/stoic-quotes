@@ -16,6 +16,9 @@ class StoicQuote extends React.Component {
     fetch('https://stoic-server.herokuapp.com/random')
         .then(response => response.json())
         .then(data => this.setState({text: data[0].body, author: data[0].author}))
+        .catch((error) => {
+          console.error('Error:', error);
+        });
   }
 
   componentDidMount() {
@@ -26,9 +29,9 @@ class StoicQuote extends React.Component {
     return (
         <div className='wrapper'>
           <div id='quote-box'>
-            <div id='text'><span id='quote-mark'>"</span>{this.state.text}</div>
+            <div id='text'>”{this.state.text}”</div>
             <div id='author'>– {this.state.author}</div>
-            <button id='new-quote' onClick={this.submitQuote}>New Quote</button>
+            <div id='button-container'><a id='tweet-quote' href="twitter.com/intent/tweet"></a><button id='new-quote' onClick={this.submitQuote}>New Quote</button></div>
           </div>
         </div>
     )
