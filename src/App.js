@@ -32,7 +32,7 @@ class StoicQuote extends React.Component {
             <div id='text'>”{this.state.text}”</div>
             <div id='author'>– {this.state.author}</div>
             {/* eslint-disable-next-line jsx-a11y/anchor-has-content,react/jsx-no-target-blank */}
-            <div id='button-container'><a id='tweet-quote' href="https://twitter.com/intent/tweet" target="_blank"/><button id='new-quote' onClick={this.submitQuote}>New Quote</button></div>
+            <div id='button-container'><button id='new-quote' onClick={this.submitQuote}>New Quote</button></div>
           </div>
         </div>
     )
